@@ -1,4 +1,3 @@
 # crawler
-python爬虫练习
+基于mongodb的python多线程爬虫
 
-2017-02-14
