@@ -9,25 +9,7 @@ from bson.binary import Binary
 
 
 class MongoCache:
-    """
-    Wrapper around MongoDB to cache downloads
-
-    >>> cache = MongoCache()
-    >>> cache.clear()
-    >>> url = 'http://example.webscraping.com'
-    >>> result = {'html': '...'}
-    >>> cache[url] = result
-    >>> cache[url]['html'] == result['html']
-    True
-    >>> cache = MongoCache(expires=timedelta())
-    >>> cache[url] = result
-    >>> # every 60 seconds is purged http://docs.mongodb.org/manual/core/index-ttl/
-    >>> import time; time.sleep(60)
-    >>> cache[url] 
-    Traceback (most recent call last):
-     ...
-    KeyError: 'http://example.webscraping.com does not exist'
-    """
+ 
     def __init__(self, client=None, expires=timedelta(days=30)):
         """
         client: mongo database client
