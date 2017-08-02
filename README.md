@@ -1,3 +1,3 @@
 # crawler
-基于mongodb的python多线程爬虫
+python爬虫小程序
 
