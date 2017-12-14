@@ -25,6 +25,16 @@ page=1'
 # clsname=%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E3%80%81%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF&\
 # page=1'
 
+
+# book_url = 'http://202.114.181.8:8080/newbook/newbook_cls_book.php?\
+# back_days=180&\
+# loca_code=ALL&\
+# cls=TP31&\
+# s_doctype=ALL&\
+# clsname=%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6&\
+# page=1'
+
+
 lend_avl_url = 'http://202.114.181.8:8080/opac/ajax_lend_avl.php'
 
 item_url = 'http://202.114.181.8:8080/opac/ajax_item.php'
