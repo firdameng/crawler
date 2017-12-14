@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 
 import csv
+import codecs 
 
 def _init_():
     ''''''
 
 def write_csv_header(filename,header):
     with open(filename, 'wb') as csvfile:
+        csvfile.write(codecs.BOM_UTF8) 
         bookswriter = csv.writer(csvfile)
         bookswriter.writerow(header)
         
@@ -17,7 +19,9 @@ def write_csv_books(filename,books,pattern = 'wb'):
     books - book字典数据列表
     '''
     with open(filename, pattern) as csvfile:
+        csvfile.write(codecs.BOM_UTF8) 
         bookswriter = csv.writer(csvfile)
+        #csvfile.write(codecs.BOM_UTF8) 
         bookrows = []
         for book in books:
             bookrows.append(
